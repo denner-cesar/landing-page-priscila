@@ -286,7 +286,12 @@
     .btn-ghost{padding:12px 0; border-bottom:none; background:rgba(255,255,255,0.08); border-radius:999px;}
     .hero-note{font-size:0.78rem; line-height:1.5;}
     .date-card{padding:22px 18px; width:100%; max-width:440px; margin:0 auto; text-align:center;}
-    .date-row{flex-direction:column; gap:4px; margin-bottom:12px; align-items:center;}
+    .date-card .fest{font-size:0.68rem; letter-spacing:0.1em;}
+    .date-card .big-date{font-size:clamp(1.65rem, 6vw, 2.15rem); line-height:1.08;}
+    .date-card .month{font-size:0.92rem;}
+    .date-row{flex-direction:column; gap:4px; margin-bottom:12px; align-items:center; width:100%;}
+    .date-row span,
+    .date-row b{display:block; width:100%; word-break:break-word;}
     .strip{padding:10px 0; font-size:0.8rem;}
     .section-head{margin-bottom:32px; text-align:center; margin-left:auto; margin-right:auto;}
     .section-head h2{font-size:1.55rem;}
@@ -307,23 +312,32 @@
   @media (max-width: 390px){
     .wrap{padding:0 12px;}
     .topbar .wrap{padding-left:6px; padding-right:6px;}
-    .brand-name{font-size:0.9rem;}
-    .hero{padding:48px 0 64px;}
-    .hero h1{font-size:clamp(1.7rem, 8.2vw, 2.1rem); line-height:1.06;}
-    .hero p.lede{font-size:0.9rem; line-height:1.5;}
+    .brand-name{font-size:0.86rem;}
+    .hero{padding:44px 0 58px;}
+    .hero h1{font-size:clamp(1.55rem, 7.8vw, 1.95rem); line-height:1.06;}
+    .hero p.lede{font-size:0.86rem; line-height:1.45; margin-top:14px;}
     .hero-actions{gap:10px;}
-    .btn-primary, .btn-ghost{width:100%; max-width:100%; padding-left:16px; padding-right:16px;}
-    .date-card{padding:20px 14px;}
-    .date-row{font-size:0.88rem;}
-    .section-head h2{font-size:1.55rem;}
-    .section-head p{font-size:0.92rem;}
-    .product-body{padding:18px 14px;}
-    .proof-quote{font-size:1.1rem;}
-    .stat{padding:18px 14px;}
-    .cta-band h2{font-size:1.6rem;}
-    .cta-band p{font-size:0.92rem;}
-    footer{padding:32px 0;}
-    .float-wa{width:54px; height:54px; right:12px; bottom:12px;}
+    .btn-primary, .btn-ghost{width:100%; max-width:100%; padding-left:14px; padding-right:14px; font-size:0.92rem;}
+    .hero-note{font-size:0.72rem; line-height:1.45;}
+    .date-card{padding:18px 12px;}
+    .date-card .fest{font-size:0.64rem;}
+    .date-card .big-date{font-size:clamp(1.45rem, 5.8vw, 1.8rem); line-height:1.08;}
+    .date-card .month{font-size:0.86rem;}
+    .date-row{font-size:0.8rem; width:100%;}
+    .date-row span,
+    .date-row b{word-break:break-word;}
+    .section-head{margin-bottom:28px;}
+    .section-head h2{font-size:1.38rem;}
+    .section-head p{font-size:0.88rem;}
+    .product-body{padding:16px 12px;}
+    .product-body h3{font-size:1rem;}
+    .product-body p{font-size:0.86rem;}
+    .proof-quote{font-size:1rem;}
+    .stat{padding:16px 12px;}
+    .cta-band h2{font-size:1.45rem;}
+    .cta-band p{font-size:0.88rem;}
+    footer{padding:28px 0;}
+    .float-wa{width:52px; height:52px; right:10px; bottom:10px;}
   }
 
   @media (prefers-reduced-motion: reduce){
